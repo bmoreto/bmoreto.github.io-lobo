@@ -1,8 +1,13 @@
+body {
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+  color: var(--c13);
+}
+
 .menu a {
   color: var(--c13, #141414);
   font-family: "Fira Sans";
   font-size: 1.125rem;
-  line-height: 60px;
+  line-height: 1.3;
 }
 
 .titulo-principal {
@@ -10,94 +15,126 @@
   font-family: "Fira Sans";
   font-size: 4.5rem;
   font-weight: 700;
-  line-height: 80px;
+  line-height: 1.125;
 }
 
-.texto {
+.subtitulo-principal {
+  color: var(--c10, #525252);
   font-family: "Fira Sans";
   font-size: 1.5rem;
-  font-weight: 400;
 }
 
 .titulo-section {
   font-family: "Fira Sans";
-  font-size: 9rem;
+  font-size: 8rem;
   font-weight: 700;
-  line-height: 144px;
+  line-height: 1;
   text-transform: uppercase;
-  word-break: break-all;
 }
 
-.empresa-ano {
-  color: var(--c10, #525252);
+.introducao-section {
   font-family: "Fira Sans";
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 20px;
+  font-size: 1.5rem;
+  max-width: 40ch;
+  line-height: 1.33;
 }
 
-.empresa-nome {
-  color: var(--b);
-  font-family: "Fira Sans";
-  font-size: 1.125rem;
-  font-weight: 700;
-  line-height: 20px;
-}
-
+.empresa-ano,
 .empresa-texto {
   color: var(--c10, #525252);
   font-family: "Fira Sans";
   font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 20px;
+  line-height: 1.4;
 }
 
-.empresa-habilidades {
+.empresa-nome,
+.empresa-cargo {
+  color: var(--b);
+  font-family: "Fira Sans";
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.empresa-habilidades li {
   color: var(--c13, #141414);
   font-family: "Fira Sans";
   font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 20px;
+  line-height: 1.4;
 }
 
 .faculdade-tipo {
   color: var(--c6, #a3a3a3);
   font-family: "Fira Sans";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
+  font-size: 0.875rem;
   text-transform: uppercase;
 }
 
 .faculdade-curso {
-  color: var(--w);
+  color: var(--w, #ffffff);
   font-family: "Fira Sans";
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 25px;
+  font-size: 1.125rem;
+  line-height: 1.4;
 }
 
 .faculdade-instituicao {
   color: var(--c6, #a3a3a3);
   font-family: "Fira Sans";
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 20px;
+  font-size: 1.125rem;
 }
 
-.extra-titulo {
-  color: var(--c7);
+.extra-titulo,
+.idiomas-titulo {
+  color: var(--c7, #8f8f8f);
   font-family: "Fira Sans";
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 20px;
+  font-size: 0.875rem;
+  line-height: 1.4;
   text-transform: uppercase;
 }
 
-.extra-li {
-  color: #fff;
+.extra-lista li,
+.idiomas-lista li {
+  color: var(--w, #ffffff);
   font-family: "Fira Sans";
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 20px;
+  font-size: 1.125rem;
+  line-height: 1.1;
+}
+
+.extra-lista span,
+.idiomas-lista span {
+  color: var(--c7, #8f8f8f);
+  font-family: "Fira Sans";
+  font-size: 1.125rem;
+}
+
+.footer-texto {
+  color: var(--c4, #cccccc);
+  font-family: "Fira Sans";
+  font-size: 1.5rem;
+  line-height: 1.33;
+}
+
+.contato-lista a {
+  color: var(--w, #ffffff);
+  font-family: "Fira Sans";
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.footer-copy {
+  color: var(--c7, #8f8f8f);
+  font-family: "Fira Sans";
+  font-size: 1.125rem;
+}
+
+@media (max-width: 800px) {
+  .titulo-section {
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial !important;
+  }
+  .introducao-section {
+    font-size: 1.25rem;
+  }
 }

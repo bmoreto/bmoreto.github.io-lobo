@@ -1,44 +1,30 @@
-.formacao-container {
-  max-width: 1200px;
-  padding: 40px 20px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 100px;
-  position: relative;
+#formacao {
+  background: var(--c13, #141414);
 }
 
-.formacao-container::after {
-  content: "";
-  display: block;
-  width: 130px;
-  height: 100px;
-  background: url(/img/detalhe.svg) no-repeat center;
-  position: absolute;
-  bottom: -50px;
-  left: 20px;
-}
-
-.formacao {
-  color: #ffffff;
-  background: #141414;
-}
-
-.formacao h2 {
-  color: #000000;
+#formacao .titulo-section {
+  color: var(--b);
+  word-break: break-all;
   max-width: 5ch;
 }
 
-.formacao-texto {
-  font-size: 1.5rem;
-  line-height: 1.33;
-  max-height: 40ch;
+#formacao .introducao-section {
+  color: var(--c6, #a3a3a3);
   margin-bottom: 60px;
-  color: #a3a3a3;
 }
 
-.formacao-texto strong {
-  color: #ffffff;
+#formacao .introducao-section strong {
+  color: var(--w, #ffffff);
+}
+
+.faculdade {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: var(--b);
+  padding: 20px;
+  border-radius: 4px;
+  max-width: 200px;
 }
 
 .faculdade-lista {
@@ -48,100 +34,112 @@
   margin-bottom: 60px;
 }
 
-.faculdade {
-  background: #000000;
+.faculdade-lista li {
+  background: black;
   padding: 20px;
-  border-radius: 4px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
 }
 
 .faculdade-tipo {
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  color: #a3a3a3;
   margin-bottom: 10px;
 }
 
 .faculdade-curso {
-  font-size: 1.125rem;
-  line-height: 1.4;
+  flex: 1;
   margin-bottom: 40px;
   position: relative;
-  flex: 1;
 }
 
 .faculdade-curso::before {
+  position: absolute;
   content: "";
-  display: block;
   width: 4px;
   height: 20px;
-  background: linear-gradient(#b6f829, #67dd0a);
   left: -24px;
+  background: linear-gradient(180deg, #b6f829 0%, #67dd0a 100%);
 }
 
-.faculdade-instituicao {
-  font-size: 1.125rem;
-  color: #a3a3a3;
-}
-
-.formacao-extra h3 {
-  font-size: 0.875rem;
-  line-height: 1.4;
-  color: #8f8f8f;
-  text-transform: uppercase;
-  margin-bottom: 30px;
+.formacao-extra {
+  margin-bottom: 60px;
   position: relative;
 }
 
-.formacao-extra h3::before {
-  display: block;
-  content: "";
-  width: 24px;
-  height: 24px;
+.formacao-extra::before {
   position: absolute;
-  left: -36px;
-  top: -4px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  left: -30px;
+  background: url(../img/cursos.svg) no-repeat center;
 }
 
-.cursos h3::before {
-  background: url(/img/cursos.svg) no-repeat center;
+.cursos {
+  margin-bottom: 60px;
 }
 
-.idiomas h3::before {
-  background: url(/img/idiomas.svg) no-repeat center;
+.extra-titulo,
+.idiomas-titulo {
+  margin-bottom: 30px;
 }
 
-.formacao-extra li {
-  font-size: 1.125rem;
-  line-height: 1.1;
+.extra-lista li {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
-.formacao-extra span {
-  color: #8f8f8f;
+.idiomas {
+  position: relative;
 }
 
-.cursos li {
-  display: flex;
-  justify-content: space-between;
+.idiomas::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  left: -30px;
+  background: url(../img/idiomas.svg) no-repeat center;
+}
+
+.idiomas-lista li {
+  margin-bottom: 20px;
+}
+
+.formacao .container {
+  position: relative;
+}
+
+.formacao .container::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 130px;
+  height: 100px;
+  bottom: -50px;
+  background: url(/img/detalhe.svg) no-repeat center;
 }
 
 @media (max-width: 800px) {
-  .formacao-container {
+  .formacao .container {
     grid-template-columns: 1fr;
     padding: 60px 20px;
     gap: 40px;
   }
-  .formacao h2 {
-    color: #ffffff;
+  #formacao .titulo-section {
+    color: var(--w, #ffffff);
+    max-width: initial;
   }
-  .formacao-texto {
-    font-size: 1.25rem;
+  .idiomas::before {
+    top: -25px;
+    left: 3px;
   }
-  .formacao-extra h3::before {
-    position: initial;
-    margin-bottom: 10px;
+  .formacao-extra::before {
+    top: -25px;
+    left: 3px;
+  }
+}
+
+@media (max-width: 400px) {
+  .formacao .container::after {
+    display: none;
   }
 }
