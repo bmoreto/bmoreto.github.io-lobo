@@ -24,6 +24,6 @@
   }
   .menu a {
     border-radius: 4px;
-    background: var(--c1, #f5f5f5);
+    background: var(--c1);
   }
 }

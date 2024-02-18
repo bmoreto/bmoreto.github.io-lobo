@@ -1,5 +1,5 @@
 #formacao {
-  background: var(--c13, #141414);
+  background: var(--c13);
 }
 
 #formacao .titulo-section {
@@ -9,12 +9,12 @@
 }
 
 #formacao .introducao-section {
-  color: var(--c6, #a3a3a3);
+  color: var(--c6);
   margin-bottom: 60px;
 }
 
 #formacao .introducao-section strong {
-  color: var(--w, #ffffff);
+  color: var(--w);
 }
 
 .faculdade {
@@ -35,7 +35,7 @@
 }
 
 .faculdade-lista li {
-  background: black;
+  background: var(--b);
   padding: 20px;
 }
 
@@ -55,7 +55,7 @@
   width: 4px;
   height: 20px;
   left: -24px;
-  background: linear-gradient(180deg, #b6f829 0%, #67dd0a 100%);
+  background: var(--gradiente);
 }
 
 .formacao-extra {
@@ -124,7 +124,7 @@
     gap: 40px;
   }
   #formacao .titulo-section {
-    color: var(--w, #ffffff);
+    color: var(--w);
     max-width: initial;
   }
   .idiomas::before {

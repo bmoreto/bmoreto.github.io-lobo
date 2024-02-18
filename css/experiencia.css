@@ -1,16 +1,16 @@
 #experiencia .titulo-section {
-  color: var(--c3, #e0e0e0);
+  color: var(--c3);
   word-break: break-all;
   max-width: 4ch;
 }
 
 #experiencia .introducao-section {
-  color: var(--c10, #525252);
+  color: var(--c10);
   margin-bottom: 60px;
 }
 
 #experiencia .introducao-section strong {
-  color: var(--c13, #141414);
+  color: var(--c13);
 }
 
 .empresa {
@@ -18,7 +18,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 10px 20px;
   padding: 20px;
-  background: var(--c1, #f5f5f5);
+  background: var(--c1);
   margin-bottom: 20px;
   border-radius: 4px;
   position: relative;
@@ -31,7 +31,7 @@
   height: 20px;
   top: 20px;
   left: -4px;
-  background: linear-gradient(180deg, #b6f829 0%, #67dd0a 100%);
+  background: var(--gradiente);
 }
 
 .empresa-ano {
@@ -54,7 +54,7 @@
 }
 
 .empresa-habilidades li {
-  background: var(--w, #ffffff);
+  background: var(--w);
   border-radius: 4px;
   padding: 5px 10px;
 }
