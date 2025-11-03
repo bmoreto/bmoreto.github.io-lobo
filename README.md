@@ -27,7 +27,7 @@ Throughout the development process, I practiced:
 
 ## 🌐 Live Demo
 
-🔗 [View the project here](https://bmoreto.github.io/bmoreto.github.io-projeto-lobo/)
+🔗 [View the project here](https://bmoreto.github.io/bmoreto.github.io-lobo/)
 
 ## 💼 Portfolio
 
